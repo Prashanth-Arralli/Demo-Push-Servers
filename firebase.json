@@ -1,0 +1,25 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites":[
+      {
+        "source":"/register",
+        "function":"firebaseApp"
+      },
+      {
+        "source":"/send",
+        "function":"firebaseApp"
+      },
+      {
+        "source":"/unregister",
+        "function":"firebaseApp"
+      }
+    ]
+
+  }
+}
